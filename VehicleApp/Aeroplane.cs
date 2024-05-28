@@ -6,8 +6,8 @@ internal class Aeroplane : Vehicle
     {
         return KsToKw() / 1000;
     }
-    protected override void PrintDetails()
+    internal override void PrintDetails()
     {
-        Console.WriteLine($"Vehicle details: Manufacturer: {Manufacturer}, Model: {Model}, Company: {Company} Ks: {Ks}, Kw: {KsToKw()}");
+        Console.WriteLine($"Aeroplane details: Manufacturer: {Manufacturer}, Model: {Model}, Company: {Company} Ks: {Ks}, Mw: {KsToMw()}");
     }
 }

@@ -1,5 +1,5 @@
 ﻿namespace VehicleApp;
-internal abstract class Vehicle
+internal abstract class Vehicle : IVehicle
 {
     protected Vehicle()
     {
@@ -22,8 +22,8 @@ internal abstract class Vehicle
         return Ks * 0.735;
     }
 
-    protected virtual void PrintDetails()
+    internal virtual void PrintDetails()
     {
-        Console.WriteLine($"Vehicle details: Manufacturer: {Manufacturer}, Model: {Model}, Ks: {Ks}, Kw: {KsToKw()}");
+        Console.WriteLine($"Vehicle details: Manufacturer: {Manufacturer}, Model: {Model}, Color: {Color} Ks: {Ks}, Kw: {KsToKw()}");
     }
 }
