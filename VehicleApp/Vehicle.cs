@@ -12,9 +12,9 @@ internal abstract class Vehicle
         Color = color;
         Ks = ks;
     }
-    public string Manufacturer { get; set; }
-    public string Model { get; set; }
-    public string Color { get; set; }
+    public string? Manufacturer { get; set; }
+    public string? Model { get; set; }
+    public string Color { get; set; } = String.Empty;
     public double Ks { get; set; }
 
     protected virtual double KsToKw()
