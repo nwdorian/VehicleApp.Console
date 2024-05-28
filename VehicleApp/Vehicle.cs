@@ -17,12 +17,9 @@ internal abstract class Vehicle
     public string Color { get; set; }
     public double Ks { get; set; }
 
-    public double KsToKw()
-    {
-        return Ks * 0.735;
-    }
+    protected abstract double KsToKw();
 
-    public void PrintDetails()
+    protected virtual void PrintDetails()
     {
         Console.WriteLine($"Vehicle details: Manufacturer: {Manufacturer}, Model: {Model}, Ks: {Ks}, Kw: {KsToKw()}");
     }
