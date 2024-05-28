@@ -23,6 +23,7 @@ while (!exit)
             vehicleService.AddVehicle();
             break;
         case "2":
+            vehicleService.UpdateVehicle();
             break;
         case "3":
             vehicleService.DeleteVehicle();
