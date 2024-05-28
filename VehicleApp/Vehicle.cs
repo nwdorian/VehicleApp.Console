@@ -17,7 +17,10 @@ internal abstract class Vehicle
     public string Color { get; set; }
     public double Ks { get; set; }
 
-    protected abstract double KsToKw();
+    protected virtual double KsToKw()
+    {
+        return Ks * 0.735;
+    }
 
     protected virtual void PrintDetails()
     {
