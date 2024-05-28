@@ -5,10 +5,11 @@ internal abstract class Vehicle
     {
     }
 
-    protected Vehicle(string? manufacturer, string? model, double ks)
+    protected Vehicle(string? manufacturer, string? model, string color, double ks)
     {
         Manufacturer = manufacturer;
         Model = model;
+        Color = color;
         Ks = ks;
     }
     public string Manufacturer { get; set; }
