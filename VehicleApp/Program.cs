@@ -22,6 +22,7 @@ while (!exit)
         case "4":
             break;
         case "5":
+            exit = true;
             break;
         default:
             Console.Write("Unknown option! Press any key to continue...");
