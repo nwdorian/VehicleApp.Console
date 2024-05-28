@@ -22,7 +22,7 @@ internal abstract class Vehicle : IVehicle
         return Ks * 0.735;
     }
 
-    protected virtual void PrintDetails()
+    internal virtual void PrintDetails()
     {
         Console.WriteLine($"Vehicle details: Manufacturer: {Manufacturer}, Model: {Model}, Color: {Color} Ks: {Ks}, Kw: {KsToKw()}");
     }

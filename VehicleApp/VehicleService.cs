@@ -1,9 +1,9 @@
 ﻿namespace VehicleApp;
 internal class VehicleService
 {
+    List<Vehicle> vehicleList = new();
     internal void AddVehicle()
     {
-        List<Vehicle> vehicleList = new();
 
         Console.Clear();
         Console.WriteLine("SELECT FROM THE MENU");
@@ -78,5 +78,27 @@ internal class VehicleService
         {
             return;
         }
+    }
+
+    internal void ListAllVehicles()
+    {
+        if (vehicleList.Any())
+        {
+            Console.WriteLine("VEHICLE LIST");
+
+            foreach (var item in vehicleList)
+            {
+                Console.Write("Id " + vehicleList.IndexOf(item) + ". ");
+                item.PrintDetails();
+                Console.WriteLine();
+            }
+        }
+        else
+        {
+            Console.WriteLine("There are not items in the vehicle list.");
+        }
+
+        Console.Write("Press any key to continue...");
+        Console.ReadKey();
     }
 }
