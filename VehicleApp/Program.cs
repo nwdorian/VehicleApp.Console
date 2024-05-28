@@ -25,6 +25,7 @@ while (!exit)
         case "2":
             break;
         case "3":
+            vehicleService.DeleteVehicle();
             break;
         case "4":
             vehicleService.ListAllVehicles();
