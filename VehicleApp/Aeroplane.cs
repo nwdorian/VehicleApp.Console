@@ -8,6 +8,6 @@ internal class Aeroplane : Vehicle
     }
     protected override void PrintDetails()
     {
-        Console.WriteLine($"Vehicle details: Manufacturer: {Manufacturer}, Model: {Model}, Company: {Company} Ks: {Ks}, Kw: {KsToKw()}");
+        Console.WriteLine($"Aeroplane details: Manufacturer: {Manufacturer}, Model: {Model}, Company: {Company} Ks: {Ks}, Mw: {KsToMw()}");
     }
 }
